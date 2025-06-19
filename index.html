@@ -5,6 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <title>GXC Game</title>
+    <script type="module">
+    import { DiscordProxy } from "https://unpkg.com/@robojs/patch@latest/dist/index.mjs";
+    DiscordProxy.patch();
+    </script>
+
     <style>
       @-webkit-keyframes rotation {
         from {
@@ -399,17 +404,6 @@
       </div>
     </div>
 
-   <script async
-     data-ad-client="ca-pub-123"
-     data-ad-frequency-hint="30s"
-     data-adbreak-test="on"
-     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-   </script>
-
-   <script>
-     window.adsbygoogle = window.adsbygoogle || [];
-     const adBreak =  adConfig = function(o) {adsbygoogle.push(o);}
-   </script>
 
     <script type="text/javascript">
       const CHANGE_ASPECT_RATIO = true;
